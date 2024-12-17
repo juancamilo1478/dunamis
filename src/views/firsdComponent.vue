@@ -11,7 +11,7 @@
             </div>
         </div>
         <!-- Contenido de la derecha (imagen) -->
-        <div class="w-full p-4 flex justify-center items-center  md:block">
+        <div class="w-full p-4 flex justify-center items-center hidden md:block">
             <img src="@/assets/photo1.png" alt="Descripción de la imagen" />
         </div>
     </div>
