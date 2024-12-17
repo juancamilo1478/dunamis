@@ -32,7 +32,7 @@
                 <div class="flex flex-col md:flex-row md:mx-6">
                     <a class="my-3  text-2xl font-nunito font-medium text-white transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Servicios</a>
                     <a class="my-3  text-2xl font-nunito font-medium text-white transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Sobre nosotros</a>
-                    <a class="my-3  text-2xl font-nunito font-medium text-white transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Contactanos</a>
+                    <a class="my-3  text-2xl font-nunito font-medium text-white transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#" @click="redirectToWhatsApp()">Contactanos</a>
                  
                 </div>
     
@@ -45,6 +45,17 @@
 </template>
 <script>
 export default {
-    name:"navbar"
+    name:"navbar",
+    methods: {
+    // Redirigir a WhatsApp
+    redirectToWhatsApp() {
+      const phoneNumber = '41782504546'; // Número de teléfono con el que deseas contactar (sin el +)
+      const message = encodeURIComponent('¡Hola! Estoy interesado en tus servicios.'); // Mensaje codificado
+      const url = `https://wa.me/${phoneNumber}?text=${message}`;
+      
+      // Abrir WhatsApp en una nueva pestaña
+      window.open(url, '_blank');
+    }
+    }
 }
 </script>
