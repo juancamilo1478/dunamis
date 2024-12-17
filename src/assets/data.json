@@ -2,14 +2,14 @@
     {
       "id": 1,
       "name": "Momentum-church",
-      "description": "Paguina de la iglesia Momentum-church.",
+      "description": "Página de la iglesia Momentum-church.",
       "url":"https://www.momentum-church.ch/",
       "images":["https://res.cloudinary.com/dirsusbyy/image/upload/v1734418169/fdhb2v5k6btgx45amrbq.png","https://res.cloudinary.com/dirsusbyy/image/upload/v1734418168/d9wevakloovv9tg9t4cd.png"]
     },
     {
       "id": 2,
       "name": "Mauribeauty",
-      "description": "Paguina de maquillaje .",
+      "description": "Página de maquillaje .",
       "url":"https://www.mauribeauty.com/",
       "images":["https://res.cloudinary.com/dirsusbyy/image/upload/v1734418168/ahga5h6biab654zc6blf.png","https://res.cloudinary.com/dirsusbyy/image/upload/v1734418168/dpwgyzoizpbkhmhyfa78.png"]
     },
@@ -17,7 +17,7 @@
     {
         "id": 4,
         "name": "Santi-photography",
-        "description": "Paguina de empresa de fotografía.",
+        "description": "Página de empresa de fotografía.",
         "url":"https://www.santi-photography.ch/",
         "images":["https://res.cloudinary.com/dirsusbyy/image/upload/v1734422031/q9kkjezqmhvmkiivvwn3.png","https://res.cloudinary.com/dirsusbyy/image/upload/v1734422032/uqkjkvyejqzgglymxgxk.png"]
       }
