@@ -11,7 +11,7 @@
         <p class="text-gray-700">{{ proyect.description }}</p>
         
       </div>
-      <div class="w-full rounded-b-lg  cursor-pointer" style="background: var(--segundaty-color);"  @click="showModal = true">
+      <div class="w-full rounded-b-lg  cursor-pointer" style="background: var(--segundaty-color);"  @click="navigateToProjectPage()">
         <h1 class="p-4 flex justify-center items-center text-white font-nunito font-bold text-2xl">Ver más</h1>
     </div>
     
@@ -48,6 +48,18 @@
         showModal: false, // Controla la visibilidad del modal
       };
     },
+    methods: {
+    // Método para navegar a la página del proyecto
+    navigateToProjectPage() {
+      // Navegar a la página del proyecto utilizando Vue Router
+      if (this.proyect.url) {
+        // Abre la URL del proyecto en una nueva pestaña
+        window.open(this.proyect.url, '_blank');
+      } else {
+        console.error('No URL available for this project');
+      }
+    }
+  }
   };
   </script>
   
