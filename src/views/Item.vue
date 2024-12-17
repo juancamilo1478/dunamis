@@ -8,7 +8,7 @@
          style="background: var(--primaty-color);"
       >
         <h2 class="  font-bold text-white font-nunito text2">{{ proyect.name }}</h2>
-        <p class="text-gray-700">{{ proyect.description }}</p>
+        <p class="text-gray-400 pt-3">{{ proyect.description }}</p>
         
       </div>
       <div class="w-full rounded-b-lg  cursor-pointer" style="background: var(--segundaty-color);"  @click="navigateToProjectPage()">

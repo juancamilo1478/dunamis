@@ -7,7 +7,7 @@
                 En <strong style="color: var(--segundaty-color);">Dunamis</strong>, ayudamos a pequeñas y medianas empresas, emprendedores y particulares a destacar en el mundo digital y visual.
             </p>
             <div class="w-1/2 rounded-lg flex justify-center items-center mt-20" style="background: var(--segundaty-color);">
-                <h1 class=" p-3 text-white font-nunito font-bold md:text-3xl">Contactar</h1>
+                <h1 class=" p-3 text-white font-nunito font-bold md:text-3xl" @click="redirectToWhatsApp()">Contactar</h1>
             </div>
         </div>
         <!-- Contenido de la derecha (imagen) -->
@@ -19,5 +19,16 @@
 <script>
 export default {
     name:"firstComponent",
+    methods: {
+    // Redirigir a WhatsApp
+    redirectToWhatsApp() {
+      const phoneNumber = '41782504546'; // Número de teléfono con el que deseas contactar (sin el +)
+      const message = encodeURIComponent('¡Hola! Estoy interesado en tus servicios.'); // Mensaje codificado
+      const url = `https://wa.me/${phoneNumber}?text=${message}`;
+      
+      // Abrir WhatsApp en una nueva pestaña
+      window.open(url, '_blank');
+    }
+    }
 }
 </script>
